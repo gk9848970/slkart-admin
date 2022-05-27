@@ -1,0 +1,123 @@
+.coupon-list{
+    width:90%;
+    /* align-self: center;
+    margin-left: auto;
+    margin-right: auto; */
+    height:auto;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    padding-bottom: 3px;
+}
+
+.coupon-list ul li{
+  margin-left: 3.2%;
+}
+
+.detail-head{
+    margin-left: 3.2%;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e072";
+  /* "play" icon */
+  width:60%;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  float: right;
+  height:auto;
+  color: #b0c5d8;
+  font-size: 18px;
+  line-height: 22px;
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  width:50%;
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.coupon-tag{
+    font-size: xx-large;
+}
+
+.view{
+    float: right;
+}
+
+ul.coupon-details {
+    list-style: none;
+    padding: 0;
+  }
+  ul.coupon-details li {
+    margin-bottom: 5px;
+  }
+  ul.coupon-details li strong {
+    width: 150px;
+    display: inline-block;
+  }
+
+ .create-coupon{
+     font-size: large;
+     align-self: center;
+     margin-left: 30%;
+ }
+ .create-coupon:hover{
+   border: 1px solid #662d91;
+   border-radius: 5px;
+   padding:1px;
+   box-shadow: 3px 3px #888888;
+ }
+ .add2{
+     font-size: large;
+ }
+
+ #save{
+   color:white;
+ }
+
+ .cancel-button{
+   background-color: gray;
+   color: white;
+   font-size: medium;
+   margin-left: 10px;
+   padding-left:40px;
+   padding-right: 40px;
+   padding-top:8px;
+   padding-bottom:8px;
+   border: 1px solid gray;
+   border-radius: 20px 20px 20px 20px;
+ }
+
+ .cancel-button:hover{
+   color: white;
+   background-color: tomato;
+ }
+
+ .cancel-button a{
+   color: white;
+ }
+
+.coupon-status{
+    border-radius: 10px;
+ }
+
+ .hover-icons:hover b {
+  display:contents;
+}
+.hover-icons b {
+  padding: 15px 0;
+  display: none;
+}

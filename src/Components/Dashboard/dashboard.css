@@ -1,0 +1,13 @@
+
+
+h1.white-color{
+  color: #00FFFF;
+}
+
+.white-color{
+  color: white;
+}
+
+.recent{
+  min-height: 300px;
+}

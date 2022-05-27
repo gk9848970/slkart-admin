@@ -1,0 +1,41 @@
+table {
+    counter-reset: rowNumber-1;
+}
+
+table tr {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+
+.create-user{
+    font-size: large;
+    align-self: center;
+    margin-left: 40%;
+    height:40px;
+    padding-top: 8px;
+}
+
+.create-user:hover{
+  border: 1px solid #662d91;
+  border-radius: 5px;
+  padding:1px;
+  padding-top: 8px;
+  width: fit-content;
+  box-shadow: 3px 3px #888888;
+}
+
+.user-avtar img{
+    height: 150px;
+    width: 150px;
+}
+
+.table_outer 
+{ 
+    max-height: 480px;
+    overflow: auto; 
+}
