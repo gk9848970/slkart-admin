@@ -111,7 +111,7 @@ const uploadCoverImageHandler = (e) => {
 
     return(
         <div>
-        <div class="content-wrapper">
+        <div class="content-wrapper-nosideMenu">
           <div class="container-fluid">
             {/* Breadcrumbs*/}
             <ol class="breadcrumb">
@@ -129,7 +129,7 @@ const uploadCoverImageHandler = (e) => {
             First you need to add categories.
              <a href="/admin/category/createCategory">Add Categories</a>
              </MessageBox> :
-             <form onSubmit={submitDataHandler}>
+             <form onSubmit={submitDataHandler} class="form-width">
             <div>
           <div class="box_general padding_bottom">
             <div class="header_box version_2">

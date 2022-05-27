@@ -2088,3 +2088,132 @@
   font-size: x-large;
 }
 
+/* 
+  Changes to UI - Gaurav 
+*/
+
+/* Ultility Classes */
+
+.hidden {
+  display: none !important;
+}
+
+/* General Change */
+
+.content-wrapper-nosideMenu {
+    background: #f8f8f8;
+    min-height: calc(100vh - 62px);
+    padding-top: 1rem;
+    padding-bottom: 70px;
+    overflow-x: hidden;
+}
+
+/* Dashboard */
+
+.dashboard-stat-grid {
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.dashboard-stat-grid > * {
+  width: 100%;
+  max-width: 720px;
+}
+
+.recent{
+  min-height: 300px;
+}
+
+@media (max-width: 1650px) {
+  .dashboard-stat-grid {
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .dashboard-stat-grid > * {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .recent{
+    min-height: unset;
+  }
+}
+
+/* Side Menu */
+
+.navbar {
+  --theme-bg: #662d91;
+  --theme-bg-dark: #49005d;
+  --text-bg: white;
+}
+
+.navbar-sidenav {
+  background-color: var(--theme-bg) !important;
+}
+
+.nav-link-text {
+  color: var(--text-bg);
+}
+
+.fa-dashboard, .coupon-icon, .fa-list, 
+.fa-user, .order-icon, .fa-archive, 
+.fa-wrench, .fa-graduation-cap {
+  color: var(--text-bg);
+}
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
+  color: var(--text-bg) !important;
+}
+
+#mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
+  color: var(--text-bg) !important;
+}
+
+.sidenav-toggler {
+  background-color: var(--theme-bg-dark) !important;
+  border-top: none !important;
+}
+
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a {
+  background-color: var(--theme-bg) !important;
+}
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > 
+  .nav-item .sidenav-second-level, #mainNav.navbar-dark 
+  .navbar-collapse .navbar-sidenav > 
+  .nav-item .sidenav-third-level {
+    background-color: var(--theme-bg-dark) !important;
+}
+
+/* Coupon List */
+
+.coupon-list {
+  margin-inline: auto;
+  max-width: 900px;
+}
+
+/* Your courses */
+
+.category-list {
+  margin-inline: auto;
+  max-width: 900px;
+}
+
+.list_general ul li {
+  border-top-width: 2px !important;
+}
+
+.courses_box {
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+/* Every Form Section */
+
+.form-width {
+  margin-inline: auto;
+  max-width: 900px;
+}

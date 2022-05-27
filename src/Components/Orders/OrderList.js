@@ -31,7 +31,7 @@ function OrderList(params) {
 
   return(
     <div>
-      <div className="content-wrapper">
+      <div className="content-wrapper-nosideMenu">
     	    <div className="container-fluid">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">

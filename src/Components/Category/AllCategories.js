@@ -54,7 +54,7 @@ function AllCategories(params) {
 
     return(
 
-	<div className="content-wrapper">
+	<div className="content-wrapper-nosideMenu">
     	<div className="container-fluid">
 		
       {/* Breadcrumbs*/}

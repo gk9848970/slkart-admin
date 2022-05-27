@@ -38,7 +38,7 @@ function OrderDescription(props) {
 	{/* /header */}
 	
 		{/*/hero_in*/}
-        <div className="content-wrapper ">
+        <div className="content-wrapper-nosideMenu">
     	        <div className="container-fluid ">
         <div className="box_general order-details-container">
             <h5 className="color-black">Order Details</h5><br></br>

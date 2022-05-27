@@ -69,7 +69,7 @@ const {student} = props.location.state
 
     return(
         <div>
-        <div class="content-wrapper">
+        <div class="content-wrapper-nosideMenu">
           <div class="container-fluid">
             {/* Breadcrumbs*/}
             <ol class="breadcrumb">
@@ -80,7 +80,7 @@ const {student} = props.location.state
             </ol>
             {(loadingSave)&& <Loading></Loading>}
 		      {(errorSave) && <MessageBox variant="danger">{errorSave}</MessageBox>}
-          <form onSubmit={submitDataHandler}>
+          <form onSubmit={submitDataHandler} class="form-width">
             <div>
           <div class="box_general padding_bottom">
             <div class="header_box version_2">

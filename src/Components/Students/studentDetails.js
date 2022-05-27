@@ -26,7 +26,7 @@ function StudentDescription(props)
         {loading && <Loading></Loading>}
         {error && <MessageBox variant="danger">{error}</MessageBox>}
         {student && 
-        <div className="content-wrapper">
+        <div className="content-wrapper-nosideMenu">
             <div class="container content-fluid margin_60_35">
             <div class="row">
                 <aside class="col-lg-3" id="sidebar">

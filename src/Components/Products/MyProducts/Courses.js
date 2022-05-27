@@ -44,14 +44,14 @@ function Courses(params) {
 
     return(
 
-	<div className="content-wrapper">
+	<div className="content-wrapper-nosideMenu">
     	<div className="container-fluid">
 		
       {/* Breadcrumbs*/}
 
       <ol className="breadcrumb">
         <li className="breadcrumb-item">
-          <a href="#">Dashboard</a>
+		<Link to={{pathname:"/admin/dashboard"}}>Dashboard</Link>
         </li>
         <li className="breadcrumb-item active">Your Courses</li>
       </ol>
@@ -90,7 +90,7 @@ function Courses(params) {
 		  <br></br>
 
 
-		<div className="box_general">
+		<div className="box_general courses_box">
 			<div className="header_box">
 				<h2 className="d-inline-block">Your Courses</h2>
 			</div>

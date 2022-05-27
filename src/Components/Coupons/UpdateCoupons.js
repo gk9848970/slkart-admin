@@ -64,7 +64,7 @@ function UpdateCoupons(props) {
 
     return(
         <div>
-        <div class="content-wrapper">
+        <div class="content-wrapper-nosideMenu">
           <div class="container-fluid">
             {/* Breadcrumbs*/}
             <ol class="breadcrumb">
@@ -82,7 +82,7 @@ function UpdateCoupons(props) {
              <a href="/admin/courses/createcourse">Add Courses</a>
              </MessageBox> :
             <div>
-            <form onSubmit={submitDataHandler}>
+            <form onSubmit={submitDataHandler} class="form-width">
           <div class="box_general padding_bottom">
             <div class="header_box version_2">
               <h2><i class="fa fa-file"></i>Basic info</h2>

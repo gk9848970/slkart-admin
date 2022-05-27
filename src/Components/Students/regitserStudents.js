@@ -72,7 +72,7 @@ function RegisterStudent(props) {
 
     return(
         <div>
-        <div class="content-wrapper">
+        <div class="content-wrapper-nosideMenu">
           <div class="container-fluid">
             {/* Breadcrumbs*/}
             <ol class="breadcrumb">

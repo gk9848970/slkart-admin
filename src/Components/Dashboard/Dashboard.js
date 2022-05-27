@@ -136,8 +136,8 @@ function Dashboard(params) {
           </div>
         <canvas id="myAreaChart" width="100%" height="30" margin="45px 0 15px 0"></canvas>
 
-        <div class="row">
-              <div class="col-md-6">
+        <div class="row dashboard-stat-grid">
+              <div class="">
                 <div className="box_general recent">
                 <h5><i className="fa fa-fw fa-shopping-cart"></i> Recent Orders</h5>
               <table class="table table-striped">
@@ -174,7 +174,7 @@ function Dashboard(params) {
                 </div>
 
 
-                <div class="col-md-6">
+                <div class="">
                 <div className="box_general recent">
                 <h5><i className="fa fa-fw fa-users"></i> Recent Students</h5>
               <table class="table table-striped">

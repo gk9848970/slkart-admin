@@ -101,7 +101,7 @@ function ProductDescription(props) {
 	  }
     
     return(
-        <div className="content-wrapper">
+        <div className="content-wrapper-nosideMenu">
     		<div className="container-fluid">
 			{(loading || categoriesLoading || loadingDelete || studentLoading || enrolledLoading) && <Loading></Loading>}
 			{error && <MessageBox variant="danger">{error}</MessageBox>}

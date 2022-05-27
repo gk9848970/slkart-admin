@@ -12,7 +12,7 @@ function NavBar()
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
-        <a className="navbar-brand" href="/admin/dashboard"><img src="/img/speedlabs-new-logo.png" data-retina="true" alt="SpeEdLabs" width="90" padding-left="60px" height="50"/></a>
+        <a className="navbar-brand" href="/admin/dashboard"><img src="/img/speedlabs-new-logo.png" data-retina="true" alt="SpeEdLabs" padding-left="60px" height="50"/></a>
         <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i className="fa fa-fw fa-bars"></i>
           {/* <span className="navbar-toggler-icon"></span> */}
@@ -27,7 +27,7 @@ function NavBar()
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
-            <li className="nav-item">
+            <li className="nav-item hidden">
               <form className="form-inline my-2 my-lg-0 mr-lg-2">
                 <div className="input-group">
                   <input className="form-control search-top" id="user-search-bar" type="text" placeholder="Search for..." disabled={!isUsersList}/>
@@ -103,7 +103,7 @@ function SideNavBar()
               </a>
             </li>
     
-            <li className="nav-item" data-toggle="tooltip" data-placement="right" title="Admin Panel">
+            <li className="nav-item hidden" data-toggle="tooltip" data-placement="right" title="Admin Panel">
               <a className="nav-link" href={`${integrationDashboardBaseUrl}/`}>
                 <i class="fa fa-fw fa-building"></i>
                 <span className="nav-link-text">Admin Panel</span>
