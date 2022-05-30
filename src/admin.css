@@ -2110,6 +2110,18 @@
 
 /* Dashboard */
 
+@media (min-width: 991px) {
+  .navbar, .navbar-sidenav, .sidenav-toggler {
+    position: fixed !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-sidenav {
+    padding: 20px;
+  }
+}
+
 .dashboard-stat-grid {
   gap: 20px;
   flex-wrap: nowrap;
@@ -2216,4 +2228,97 @@
 .form-width {
   margin-inline: auto;
   max-width: 900px;
+}
+
+/* Login Page */
+
+.login-main-container {
+  position: relative;
+  /* 42 is the size of nav so subtracted */
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+.navbar-brand {
+  display: block;
+  margin-inline: auto;
+}
+
+.login-box {
+  display: flex;
+
+  margin-inline: auto;
+  padding: 30px;
+  max-width: 855px;
+  background: white;
+  box-shadow:0px 4px 16px rgba(106, 47, 133, 0.4);
+}
+
+.login-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+.login-div-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-div-1 > p {
+  margin: 0;
+}
+
+.login-div-1 > img {
+  margin-top: 90px;
+  width: 250px;
+}
+
+.login-div-2 {
+  margin-left: 60px;
+  margin-right: 40px;
+  width: 3px;
+  background: #00000042;
+}
+
+.login-div-3 {
+  width: 320px;
+  padding: 10px;
+}
+
+.login-div-3 > p {
+  margin-bottom: 50px;
+}
+
+.form-control {
+  padding: 5px 8px !important;
+  background: rgb(242, 242, 242);
+  border-radius: 4px;
+}
+
+.login-label {
+  font-size: 14px;
+}
+
+.login-forget-link {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+  text-align: right;
+  font-size: 11px;
+}
+
+.login-btn-signin {
+  text-transform: uppercase;
 }

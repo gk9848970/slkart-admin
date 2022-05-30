@@ -59,39 +59,45 @@ function add(){
   //     .catch((err) => console.log(err));
   // };
   return (
-    <div >
-      <nav className="navbar navbar-dark " style={{backgroundColor:"#6A2F85", marginTop:"-3.5rem"}}>
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">
-      SLkart Admin
-    </a>
-  </div>
-</nav>
-   <div className="d-flex justify-content-center align-items-center" style={{height:"51rem",}}>
-     <div className="d-flex p-5" style={{flexDirection:"column",width:'30%',height:'45%',boxShadow:'0px 4px 16px rgba(106, 47, 133, 0.18)',borderRadius:'15px'}}>
-    
-     <form >
-  <div className="mb-3">
-    <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" value={email} onChange={(e) => setEmail(e.target.value)} aria-describedby="emailHelp" />
-    <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div className="mb-3">
-    <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-    <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => setPassword(e.target.value)} />
-  </div>
-  {/* <div className="mb-3 form-check">
-    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-  </div> */}
-  
-</form>
-<button type="submit" className="btn btn-primary" onClick={()=>loginApi()} style={{width:'100%'}} >SignIn</button>
+    <div class="login-main-container">
+      <nav className="navbar navbar-dark " style={{backgroundColor:"#6A2F85"}}>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            SLkart Admin
+          </a>
+        </div>
+      </nav>
 
-  
+    <div class="login-box">
+      <div class="login-div login-div-1">
+        <p class="login-text">Hey!</p>
+        <p class="login-text">Welcome to Admin Panel</p>
+        <img src="/img/login-page-img.png" data-retina="true" alt="Login Graphic"/>
       </div>
+      <div class="login-div login-div-2">
+        
+      </div>
+      <div class="login-div login-div-3">
+        <p class="login-text text-center">Admin Login with ID/Password</p>
+        <form>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label login-text login-label">Email Address</label>
+              <input type="email" className="form-control" id="exampleInputEmail1" value={email} onChange={(e) => setEmail(e.target.value)} aria-describedby="emailHelp" />
+            </div>
+            <div className="">
+              <label htmlFor="exampleInputPassword1" className="form-label login-text login-label">Password</label>
+              <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={(e) => setPassword(e.target.value)} />
+            </div>
+            <div><a className="login-forget-link login-text" href="#">Forgot Password ?</a></div>
+            {/* <div className="mb-3 form-check">
+              <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+              <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+            </div> */}
+        </form>
+        <button type="submit" className="btn btn-primary login-btn-signin" onClick={()=>loginApi()} style={{width:'100%'}} >Sign In</button>
       </div>
     </div>
+  </div>
   );
 };
 
